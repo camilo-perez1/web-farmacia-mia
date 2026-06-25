@@ -332,3 +332,54 @@ footer p {
   border-color: var(--rojo-mia);
   transform: translateY(-2px);
 }
+
+/* =======================================================
+   ADAPTACIÓN PARA TELÉFONOS MÓVILES (DISEÑO RESPONSIVO)
+   ======================================================= */
+@media (max-width: 768px) {
+  
+  /* 1. Arreglamos el Encabezado (Header) */
+  header {
+    flex-direction: column; /* Apila el logo arriba y el menú abajo */
+    gap: 15px;
+    padding: 1rem;
+  }
+  
+  header nav ul {
+    flex-wrap: wrap; /* Permite que los enlaces bajen de línea si no caben */
+    justify-content: center;
+    gap: 10px 15px;
+  }
+
+  /* 2. Achicamos las letras gigantes del Inicio */
+  .hero {
+    padding: 6rem 1rem 4rem;
+  }
+  
+  .hero h2 {
+    font-size: 2.2rem;
+  }
+
+  /* 3. Ajustamos Mesoterapia, Clínica y Servicios */
+  .grid-servicios, .grid-mesoterapia {
+    /* Forzamos a que sea una sola columna perfecta que ocupe todo el ancho */
+    grid-template-columns: 1fr; 
+  }
+  
+  #servicios, #clinica, #mesoterapia {
+    padding: 4rem 1.5rem; /* Reducimos el espacio vacío a los lados */
+  }
+  
+  #servicios h2, #clinica h2, #mesoterapia h2 {
+    font-size: 2rem; /* Títulos un poco más pequeños para que no se desborden */
+  }
+
+  /* 4. Ajustes del logo en celular */
+  .logo-texto {
+    font-size: 1.5rem;
+  }
+  
+  .logo-img {
+    max-height: 35px;
+  }
+}

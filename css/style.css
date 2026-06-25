@@ -1,0 +1,334 @@
+/* --- NUEVOS COLORES BASADOS EN EL LOGO --- */
+:root {
+  --rojo-mia: #ef383a; /* El rojo del corazón y las letras */
+  --azul-mia: #1a56db; /* El azul de las hojitas */
+}
+
+/* Reseteo básico (Mantén el que ya tenías) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  /* Cambiamos el blanco brillante por un gris-azulado muy suave y relajante */
+  background-color: #f0f2f5; 
+}
+
+/* --- ENCABEZADO ACTUALIZADO --- */
+/* --- COMPORTAMIENTO GENERAL --- */
+html {
+  scroll-behavior: smooth; /* Hace que la navegación del menú fluya suavemente */
+}
+
+/* --- ENCABEZADO ACTUALIZADO (Ahora es pegajoso) --- */
+header {
+  background-color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 4px solid var(--rojo-mia);
+  /* Nuevas líneas para fijarlo: */
+  position: sticky;
+  top: 0;
+  z-index: 100; /* Asegura que esté por encima de las tarjetas */
+  transition: all 0.3s ease; /* Permite que el cambio de tamaño sea animado */
+}
+/* --- ESTILOS DEL NUEVO LOGO COMPUESTO --- */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espacio entre la palabra Farmacia y la imagen */
+}
+
+.logo-texto {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--azul-mia); /* Usa el azul de tu marca */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+
+
+/* --- CLASE DINÁMICA DE TYPESCRIPT --- */
+/* Esta clase no está en tu HTML. TypeScript la va a inyectar mágicamente cuando el usuario baje */
+.header-scrolled {
+  padding: 0.5rem 2rem; /* El menú se encoge un poco para no estorbar la lectura */
+  background-color: rgba(255, 255, 255, 0.95); /* Se vuelve 5% transparente */
+  backdrop-filter: blur(5px); /* Hace un efecto de cristal esmerilado con lo que queda detrás */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* Sombra más pronunciada */
+}
+
+.logo-img {
+  max-height: 60px; /* Ajusta el tamaño del logo */
+  width: auto;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav a {
+  color: var(--azul-mia); /* Texto del menú en azul */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: var(--rojo-mia); /* Al pasar el mouse se pone rojo */
+}
+
+
+.grid-mesoterapia {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+.tarjeta-meso h3 {
+  color: var(--rojo-mia); /* Títulos en rojo para contrastar */
+  margin-bottom: 1rem;
+}
+
+.tarjeta-meso p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+
+/* El contenedor que acomoda las tarjetas automáticamente */
+.grid-servicios {
+  display: grid;
+  /* Esta línea es magia: crea columnas que se adaptan al tamaño de la pantalla */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px; /* Espacio entre las tarjetas */
+  max-width: 1200px;
+  margin: 0 auto; /* Centra el grid en la pantalla */
+}
+
+
+/* Efecto al pasar el mouse por encima (Hover) */
+.tarjeta-servicio:hover {
+  transform: translateY(-8px); /* La tarjeta "salta" un poco hacia arriba */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* La sombra se hace más grande */
+}
+
+.tarjeta-servicio h3 {
+  color: #222;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.tarjeta-servicio p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+/* --- BOTÓN FLOTANTE DE WHATSAPP --- */
+.btn-whatsapp {
+  position: fixed; /* Se queda fijo aunque el usuario baje por la página */
+  bottom: 30px; /* Separación desde abajo */
+  right: 30px;  /* Separación desde la derecha */
+  background-color: #25D366; /* Verde oficial de WhatsApp */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; /* Lo hace un círculo perfecto */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para que resalte */
+  z-index: 1000; /* Asegura que siempre esté por encima de otros elementos */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: #128C7E; /* Un verde más oscuro al pasar el cursor */
+  transform: scale(1.1); /* El botón crece un poquito para invitar al clic */
+}
+
+/* --- PIE DE PÁGINA (FOOTER) --- */
+footer {
+  background-color: #222; /* Fondo oscuro */
+  color: white; /* Texto blanco */
+  text-align: center; /* Esta es la línea que centra todo */
+  padding: 3rem 2rem;
+  margin-top: 4rem;
+}
+
+footer h3 {
+  color: var(--rojo-mia); /* Usamos el rojo de tu logo */
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+  color: #ccc; /* Un gris claro para que no canse la vista */
+}
+
+/* --- ESTILOS DE ANIMACIÓN --- */
+.oculto {
+  opacity: 0;
+  transform: translateY(50px); /* Empieza 50 pixeles más abajo */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.mostrar {
+  opacity: 1;
+  transform: translateY(0); /* Vuelve a su posición original */
+}
+
+
+
+/* --- ESTILOS DEL HERO (SECCIÓN PRINCIPAL) --- */
+.hero {
+  text-align: center;
+  padding: 8rem 2rem 6rem;
+  /* Patrón de puntos con un contraste mucho más bajo que no molesta la vista */
+  background-image: radial-gradient(#cbd5e1 1.5px, transparent 1.5px);
+  background-size: 30px 30px;
+  background-color: #f4f6f9; /* Un crema/azulado cálido */
+}
+
+.hero h2 {
+  font-size: 3.5rem;
+  background: linear-gradient(90deg, var(--azul-mia), var(--rojo-mia));
+  -webkit-background-clip: text;
+  background-clip: text; /* Aquí agregamos la regla estándar que te pide el editor */
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+}
+
+/* El nuevo botón llamativo */
+.btn-cta {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background: linear-gradient(45deg, var(--azul-mia), #00308F);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px; /* Bordes redondeados modernos */
+  box-shadow: 0 4px 15px rgba(26, 86, 219, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-cta:hover {
+  transform: translateY(-3px) scale(1.02); /* Se levanta un poco al pasar el mouse */
+  box-shadow: 0 8px 25px rgba(26, 86, 219, 0.6);
+}
+
+/* --- FONDOS DEGRADADOS PARA LAS SECCIONES --- */
+#servicios {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 100%);
+}
+
+#mesoterapia {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #eef2f3 0%, #d8e4ea 100%);
+}
+
+#servicios h2, #mesoterapia h2 {
+  color: var(--azul-mia);
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+/* --- TARJETAS EFECTO GLASSMORPHISM (CRISTAL) --- */
+.tarjeta-servicio, .tarjeta-meso {
+  /* Fondo semitransparente en lugar de blanco sólido */
+  background: rgba(255, 255, 255, 0.45);
+  
+  /* El efecto de desenfoque del cristal */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  
+  /* Un borde blanco muy fino para simular el borde del vidrio */
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  
+  border-radius: 16px;
+  padding: 2.5rem 1.5rem;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.08);
+  transition: transform 0.3s ease, background 0.3s ease;
+  text-align: left;
+}
+
+.tarjeta-servicio:hover, .tarjeta-meso:hover {
+  background: rgba(255, 255, 255, 0.65); /* Se aclara un poco al pasar el mouse */
+  transform: translateY(-8px);
+}
+
+.tarjeta-servicio h3, .tarjeta-meso h3 {
+  color: var(--rojo-mia);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.tarjeta-servicio p, .tarjeta-meso p {
+  color: #444;
+  line-height: 1.6;
+}
+
+
+/* --- SECCIÓN CLÍNICA (Dra. Carmen García) --- */
+#clinica {
+  text-align: center;
+  padding: 5rem 2rem;
+  /* Un degradado azul muy suave y relajante, ideal para temas de medicina natural */
+  background: linear-gradient(135deg, #fdfbfb 0%, #e2ebf0 100%);
+}
+
+#clinica h2 {
+  color: var(--azul-mia);
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+}
+
+.subtitulo-clinica {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 3rem;
+}
+
+/* --- BOTÓN DE GOOGLE MAPS EN EL FOOTER --- */
+.btn-maps {
+  display: inline-block;
+  margin: 10px 0 15px 0;
+  padding: 8px 20px;
+  background-color: #333; /* Un poco más claro que el fondo del footer */
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+  border-radius: 20px;
+  border: 1px solid #555;
+  transition: all 0.3s ease;
+}
+
+.btn-maps:hover {
+  background-color: var(--rojo-mia); /* Se pone rojo al pasar el mouse */
+  color: white;
+  border-color: var(--rojo-mia);
+  transform: translateY(-2px);
+}

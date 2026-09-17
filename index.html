@@ -1,123 +1,349 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Farmacia Mía | Tu salud en buenas manos</title>
-    <meta property="og:title" content="Farmacia Mía | Salud y Bienestar Integral" />
-    <meta property="og:description" content="Tu farmacia de confianza en Managua. Medicamentos, cuidado personal, mesoterapia y clínica integral con la Dra. Carmen García." />
-    <meta property="og:type" content="website" />
-    
-    <meta property="og:url" content="https://web-farmacia-mia.vercel.app/" />
-    <meta property="og:image" content="https://web-farmacia-mia.vercel.app/img/logo.png" />
-    <link rel="stylesheet" href="/css/style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <span class="logo-texto">Farmacia</span>
-        <img src="/img/logo.png" alt="Logo Mía" class="logo-img">
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#servicios">Farmacia</a></li>
-          <li><a href="#clinica">Clínica Dra. Carmen</a></li>
-          <li><a href="#mesoterapia">Mesoterapia</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <!-- Sección de Inicio -->
-      <section id="inicio" class="hero">
-        <h2>Bienvenido a Farmacia Mía</h2>
-        <p>Tu farmacia de confianza con el mejor surtido de medicamentos, cuidado personal y estética.</p>
-        <a href="https://wa.me/50582351430" target="_blank" rel="noopener noreferrer" class="btn-cta">Agendar Consulta</a>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f8f6ef" />
+  <meta name="description" content="Farmacia Mía: medicamentos, cuidado personal, clínica y bienestar en Managua." />
+  <meta property="og:title" content="Farmacia Mía | Tu salud en buenas manos" />
+  <meta property="og:description" content="Medicamentos, cuidado personal, clínica integral y mesoterapia en un solo lugar." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://web-farmacia-mia.vercel.app/" />
+  <meta property="og:image" content="https://web-farmacia-mia.vercel.app/img/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <title>Farmacia Mía | Tu salud en buenas manos</title>
+</head>
+<body>
+  <div class="topline" aria-hidden="true"></div>
 
-      <section id="servicios">
-        <h2>Lo que ofrecemos</h2>
-        <div class="grid-servicios">
-          <div class="tarjeta-servicio">
-            <h3>💊 Medicamentos</h3>
-            <p>Amplio surtido en marcas reconocidas y opciones genéricas de la más alta calidad.</p>
-          </div>
-          <div class="tarjeta-servicio">
-            <h3>👨‍⚕️ Atención Personalizada</h3>
-            <p>Asesoría farmacéutica confiable para cuidar tu salud y la de toda tu familia.</p>
-          </div>
-          <div class="tarjeta-servicio">
-            <h3>🛒 Cuidado Personal</h3>
-            <p>Productos de primera necesidad, higiene y bienestar siempre al mejor precio.</p>
-          </div>
-        </div>
-        <!-- Sección de Clínica y Bienestar (Dra. Carmen García) -->
-      <section id="clinica">
-        <h2>👩‍⚕️ Clínica y Bienestar Integral</h2>
-        <p class="subtitulo-clinica">Atención médica y terapéutica especializada a cargo de la <strong>Dra. Carmen García</strong>.</p>
-        
-        <div class="grid-servicios">
-          
-          <div class="tarjeta-servicio">
-            <h3>🌿 Medicina Natural</h3>
-            <p>Tratamientos alternativos y naturales para mejorar tu salud desde la raíz, equilibrando tu organismo de forma segura.</p>
-          </div>
-
-          <div class="tarjeta-servicio">
-            <h3>📍 Acupuntura</h3>
-            <p>Terapia milenaria enfocada en aliviar dolores crónicos, reducir el estrés y restaurar el flujo de energía vital en tu cuerpo.</p>
-          </div>
-
-          <div class="tarjeta-servicio">
-            <h3>🛒 Cuidado Personal</h3>
-            <p>Productos de primera necesidad, higiene y bienestar siempre al mejor precio.</p>
-          </div>
-        </div> </section> <section id="clinica">
-      
-
-      <section id="mesoterapia">
-        <h2>✨ Servicio Especializado: Mesoterapia</h2>
-        <div class="grid-mesoterapia">
-          <div class="tarjeta-meso">
-            <h3>¿Qué es la Mesoterapia?</h3>
-            <p>Es un tratamiento médico estético no invasivo, que utiliza microinyecciones intradérmicas para eliminar grasa localizada, trata la celulitis y reafirma la piel.</p>
-          </div>
-          <div class="tarjeta-meso">
-            <h3>¿Cómo funciona?</h3>
-            <p>Estimula el metabolismo y disuelve las células grasas, eliminando naturalmente a través del sistema linfático y excretor.</p>
-          </div>
-          <div class="tarjeta-meso">
-            <h3>Beneficios y Resultados</h3>
-            <p>Ofrece reducción de grasa, aumenta hidratación y firmeza. Los resultados son visibles y progresivos, generalmente a partir de la 3er sesión. Se recomiendan entre 8 y 10 sesiones.</p>
-          </div>
-          <div class="tarjeta-meso">
-            <h3>Datos Importantes</h3>
-            <p>Es importante mantener un estilo de vida saludable, con dieta equilibrada y buena hidratación para maximizar los resultados. Además de lo estético, también tiene aplicaciones terapéuticas para tratar dolores y problemas circulatorios.</p>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer id="contacto">
-      <h3>Visítanos</h3>
-      <p>📍 Managua, Nicaragua</p>
-      
-      <a href="https://maps.app.goo.gl/voNZQM96Lqcw1BkB6" target="_blank" rel="noopener noreferrer" class="btn-maps">
-        🗺️ Ver en Google Maps
-      </a>
-      
-      <p>📞 Teléfono: +505 82351430</p>
-      <p>&copy; 2026 Farmacia Mía. Todos los derechos reservados.</p>
-    </footer>
-
-    <a href="https://wa.me/50582351430" class="btn-whatsapp" target="_blank" rel="noopener noreferrer">
-      <svg viewBox="0 0 32 32" width="35" height="35" fill="white">
-        <path d="M16 2.2c-7.6 0-13.8 6.2-13.8 13.8 0 2.4.6 4.7 1.8 6.7L2 29.8l7.3-1.9c2 1.1 4.3 1.7 6.7 1.7 7.6 0 13.8-6.2 13.8-13.8S23.6 2.2 16 2.2zm0 25.3c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4.3 1.1 1.2-4.2-.3-.5c-1.2-1.9-1.8-4.2-1.8-6.5 0-6.4 5.2-11.6 11.6-11.6s11.6 5.2 11.6 11.6-5.2 11.6-11.6 11.6zm6.3-8.6c-.3-.2-2-.1-2.3-.9-.1-.2-.2-.4-.4-.4s-.3.1-.5.3c-.2.3-.6.8-.7.9-.1.2-.3.2-.5.1-.2-.1-1.4-.5-2.7-1.7-1-1-1.7-2.1-1.9-2.5-.2-.4 0-.6.2-.7.2-.2.4-.4.6-.6.2-.2.3-.4.4-.6.1-.3 0-.5-.1-.7s-.8-2-1.1-2.8c-.3-.7-.6-.6-.8-.6h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.8 0 1.7 1.3 3.3 1.4 3.5.2.2 2.4 3.7 5.8 5.1 3.4 1.4 3.4.9 4 .9.6 0 1.9-.8 2.2-1.5.3-.7.3-1.3.2-1.5-.2-.1-.5-.2-.8-.4z"></path>
-      </svg>
+  <header class="site-header" id="site-header">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio de Farmacia Mía">
+      <span class="brand-word">FARMACIA</span>
+      <img src="/img/logo.png" alt="Mía" class="brand-mark" />
     </a>
 
-    <script type="module" src="/ts/main.ts"></script>
-  </body>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-controls="main-nav" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Farmacia</a>
+      <a href="#clinica">Clínica Dra. Carmen</a>
+      <a href="#mesoterapia">Mesoterapia</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <a class="header-cta" href="https://wa.me/50582351430" target="_blank" rel="noopener noreferrer">Agendar consulta <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero section-pad" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">FARMACIA • BIENESTAR • ATENCIÓN PERSONALIZADA</p>
+        <h1>Tu salud,<br /><em>en buenas manos.</em></h1>
+        <p class="hero-text">Un espacio pensado para acompañarte con medicamentos, cuidado personal, clínica integral y tratamientos especializados.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#servicios">Conocer servicios <span>→</span></a>
+          <a class="btn btn-secondary" href="https://wa.me/50582351430" target="_blank" rel="noopener noreferrer">Escribir por WhatsApp</a>
+        </div>
+        <div class="hero-note"><span class="mini-dot"></span> Atención en Managua, Nicaragua</div>
+      </div>
+
+      <div class="hero-art" aria-label="Ilustración decorativa de bienestar y farmacia">
+        <div class="hero-orb hero-orb-one"></div>
+        <div class="hero-orb hero-orb-two"></div>
+        <div class="hero-card hero-card-main">
+          <div class="hero-card-label">FARMACIA MÍA</div>
+          <div class="hero-card-title">Cuidado que<br />se siente cercano.</div>
+          <div class="hero-card-line"></div>
+          <div class="hero-bottle bottle-blue"><span>+</span></div>
+          <div class="hero-bottle bottle-red"><span>♥</span></div>
+          <div class="hero-pill pill-one"></div>
+          <div class="hero-pill pill-two"></div>
+          <div class="hero-pill pill-three"></div>
+          <div class="hero-leaf leaf-one"></div>
+          <div class="hero-leaf leaf-two"></div>
+        </div>
+        <div class="hero-stamp">
+          <span>MI</span>
+          <strong>ÍA</strong>
+          <small>salud &amp; bienestar</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro-band">
+      <div class="container intro-band-inner">
+        <p class="eyebrow">NUESTRAS ESPECIALIDADES</p>
+        <h2>Cuidado para cada momento</h2>
+        <p>Descubre un recorrido más completo por los servicios que forman parte de Farmacia Mía.</p>
+      </div>
+    </section>
+
+    <section class="specialties section-pad" id="servicios">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">LO QUE HACEMOS</p>
+            <h2>Todo en un mismo lugar</h2>
+            <p class="section-intro">Desde los medicamentos de uso cotidiano hasta opciones de bienestar y servicios especializados, conoce las principales áreas que podemos mostrar en Farmacia Mía.</p>
+          </div>
+          <a class="text-link" href="#contacto">Hablar con nosotros <span>↗</span></a>
+        </div>
+
+        <div class="service-tags" aria-label="Categorías de servicios">
+          <span>Farmacia</span>
+          <span>Salud</span>
+          <span>Bienestar</span>
+          <span>Clínica</span>
+          <span>Estética</span>
+        </div>
+
+        <div class="service-bento">
+          <article class="service-card service-card-large service-card-blue reveal">
+            <div class="service-card-top"><span>01</span><span class="service-card-icon">+</span></div>
+            <div class="service-art service-art-pharmacy" aria-hidden="true">
+              <div class="pill-shape pill-red"></div><div class="pill-shape pill-white"></div><div class="medicine-box"><strong>MÍA</strong><small>FARMACIA</small></div>
+            </div>
+            <div class="service-card-body">
+              <p class="service-kicker">FARMACIA</p>
+              <h3>Medicamentos de uso común</h3>
+              <p>Productos para necesidades habituales como dolor, fiebre, resfriados y alergias, según disponibilidad y orientación del personal.</p>
+              <a href="#contacto">CONSULTAR DISPONIBILIDAD <span>→</span></a>
+            </div>
+          </article>
+
+          <article class="service-card service-card-light reveal">
+            <div class="service-card-top"><span>02</span><span class="service-card-icon icon-dark">↗</span></div>
+            <div class="service-illustration consult-art" aria-hidden="true"><div class="consult-circle"></div><div class="consult-person"></div><div class="consult-plus">+</div></div>
+            <div class="service-card-body">
+              <p class="service-kicker">ATENCIÓN</p>
+              <h3>Consultas y orientación</h3>
+              <p>Un punto de contacto para resolver dudas sobre productos, disponibilidad y el servicio adecuado para tu necesidad.</p>
+              <a class="dark-link" href="#contacto">CONTACTARNOS <span>→</span></a>
+            </div>
+          </article>
+
+          <article class="service-card service-card-warm reveal">
+            <div class="service-card-top"><span>03</span><span class="service-card-icon icon-dark">✦</span></div>
+            <div class="service-illustration care-art-large" aria-hidden="true"><div class="care-bottle"></div><div class="care-leaf"></div></div>
+            <div class="service-card-body">
+              <p class="service-kicker">BIENESTAR</p>
+              <h3>Cuidado personal e higiene</h3>
+              <p>Una categoría para el cuidado diario, higiene y productos de bienestar personal.</p>
+              <a class="dark-link" href="#contacto">VER MÁS <span>→</span></a>
+            </div>
+          </article>
+
+          <article class="service-card service-card-mini reveal">
+            <div class="mini-service-icon">✦</div>
+            <div><p>04</p><h3>Medicamentos naturales</h3><span>Alternativas y productos de origen natural.</span></div>
+          </article>
+
+          <article class="service-card service-card-mini reveal">
+            <div class="mini-service-icon">＋</div>
+            <div><p>05</p><h3>Vitaminas y suplementos</h3><span>Categoría para bienestar y nutrición, según disponibilidad.</span></div>
+          </article>
+
+          <article class="service-card service-card-mini reveal">
+            <div class="mini-service-icon">♡</div>
+            <div><p>06</p><h3>Primeros auxilios</h3><span>Productos básicos para tener a mano en el hogar.</span></div>
+          </article>
+
+          <article class="service-card service-card-mini reveal">
+            <div class="mini-service-icon">⌁</div>
+            <div><p>07</p><h3>Acupuntura</h3><span>Servicio terapéutico dentro de la Clínica Dra. Carmen.</span></div>
+          </article>
+
+          <article class="service-card service-card-mini service-card-mini-red reveal">
+            <div class="mini-service-icon">◌</div>
+            <div><p>08</p><h3>Mesoterapia</h3><span>Servicio estético especializado con valoración profesional.</span></div>
+          </article>
+        </div>
+
+        <div class="service-note">
+          <span class="service-note-mark">*</span>
+          <p>Las categorías de productos pueden variar según existencia. Puedes escribirnos para confirmar disponibilidad antes de visitar la farmacia.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-strip">
+      <div class="container feature-strip-grid">
+        <div class="strip-copy">
+          <p class="eyebrow">ATENCIÓN CERCANA</p>
+          <h2>Más que una farmacia, un espacio para tu bienestar.</h2>
+          <p>Queremos que encuentres en un solo lugar productos, orientación y servicios pensados para acompañarte.</p>
+          <a class="btn btn-primary" href="#clinica">Conocer la clínica <span>→</span></a>
+        </div>
+        <div class="strip-stats">
+          <div class="stat"><strong>01</strong><span>Atención<br />personalizada</span></div>
+          <div class="stat"><strong>02</strong><span>Servicios<br />integrales</span></div>
+          <div class="stat"><strong>03</strong><span>Contacto<br />directo</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="clinic section-pad" id="clinica">
+      <div class="container split-section">
+        <div class="visual-panel clinic-panel reveal">
+          <div class="visual-badge">DRA. CARMEN<br /><span>CLÍNICA Y BIENESTAR</span></div>
+          <div class="clinic-figure">
+            <div class="figure-circle circle-back"></div>
+            <div class="figure-circle circle-front"></div>
+            <div class="figure-person"><div class="person-head"></div><div class="person-body"></div></div>
+            <div class="figure-plant"><span></span><span></span><span></span></div>
+          </div>
+          <span class="visual-caption">Atención médica y terapéutica</span>
+        </div>
+
+        <div class="section-copy reveal">
+          <p class="eyebrow">CLÍNICA DRA. CARMEN</p>
+          <h2>Bienestar con una atención más personal.</h2>
+          <p class="lead">Un espacio pensado para complementar el cuidado de la salud desde una perspectiva integral.</p>
+
+          <div class="info-list">
+            <div class="info-row"><span class="row-num">01</span><div><h3>Medicina natural</h3><p>Opciones y acompañamiento orientados al bienestar integral.</p></div></div>
+            <div class="info-row"><span class="row-num">02</span><div><h3>Acupuntura</h3><p>Servicio terapéutico especializado dentro de la clínica.</p></div></div>
+          </div>
+
+          <a class="text-link dark" href="https://wa.me/50582351430" target="_blank" rel="noopener noreferrer">Agendar una consulta <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="meso section-pad" id="mesoterapia">
+      <div class="container">
+        <div class="section-heading meso-heading">
+          <div>
+            <p class="eyebrow">SERVICIO ESPECIALIZADO</p>
+            <h2>Mesoterapia</h2>
+            <p>Una sección más completa para entender de qué se trata, para qué se utiliza y cómo se aborda una sesión de forma profesional.</p>
+          </div>
+          <span class="meso-heading-note">Información general</span>
+        </div>
+
+        <div class="meso-layout meso-layout-new">
+          <div class="meso-art reveal">
+            <div class="meso-circle circle-1"></div><div class="meso-circle circle-2"></div><div class="meso-circle circle-3"></div>
+            <div class="meso-bottle"><span>MÍA</span><small>MESO</small></div>
+            <div class="meso-spark spark-1">✦</div><div class="meso-spark spark-2">✧</div><div class="meso-spark spark-3">•</div>
+            <div class="meso-caption">Cuidado estético<br /><strong>especializado</strong></div>
+            <div class="meso-image-label">Ilustración conceptual</div>
+          </div>
+
+          <div class="meso-content">
+            <div class="meso-details meso-details-new">
+              <article class="meso-card reveal"><span>01</span><h3>¿Qué es?</h3><p>La mesoterapia es una técnica médico-estética que utiliza aplicaciones superficiales y localizadas, de acuerdo con el objetivo definido durante la valoración profesional.</p></article>
+              <article class="meso-card reveal"><span>02</span><h3>¿Para qué se utiliza?</h3><p>Puede formar parte de tratamientos orientados al cuidado de la piel, hidratación, apariencia y otras necesidades estéticas específicas. El objetivo depende de la valoración.</p></article>
+              <article class="meso-card reveal"><span>03</span><h3>¿Cómo es el proceso?</h3><p>Primero se realiza una valoración. Luego se prepara el área y se aplica el tratamiento de forma localizada por personal capacitado.</p></article>
+              <article class="meso-card reveal"><span>04</span><h3>Valoración y seguimiento</h3><p>La cantidad de sesiones, productos utilizados y cuidados posteriores no es igual para todas las personas y debe definirse de manera individual.</p></article>
+            </div>
+
+            <div class="meso-process-heading">
+              <p class="eyebrow">ASÍ SE PRESENTA EL SERVICIO</p>
+              <h3>Un proceso explicado de forma sencilla</h3>
+            </div>
+
+            <div class="meso-process-grid">
+              <article class="process-card reveal">
+                <div class="process-visual process-visual-one" aria-hidden="true">
+                  <div class="process-circle"></div><div class="process-person-head"></div><div class="process-person-body"></div><span>01</span>
+                </div>
+                <h4>Valoración previa</h4>
+                <p>Se conversa sobre el objetivo del tratamiento y se revisa si es adecuado para la persona.</p>
+              </article>
+              <article class="process-card reveal">
+                <div class="process-visual process-visual-two" aria-hidden="true">
+                  <div class="prep-tray"></div><div class="prep-bottle"></div><div class="prep-pad"></div><span>02</span>
+                </div>
+                <h4>Preparación</h4>
+                <p>Se prepara el área y los materiales que correspondan a la sesión.</p>
+              </article>
+              <article class="process-card reveal">
+                <div class="process-visual process-visual-three" aria-hidden="true">
+                  <div class="application-hand"></div><div class="application-tip"></div><div class="application-face"></div><span>03</span>
+                </div>
+                <h4>Aplicación profesional</h4>
+                <p>El procedimiento se realiza de manera localizada y siguiendo la valoración indicada.</p>
+              </article>
+            </div>
+
+            <div class="meso-disclaimer">
+              <strong>Importante:</strong> las ilustraciones muestran el concepto general del servicio y no sustituyen una valoración profesional. El procedimiento exacto depende de cada caso.
+            </div>
+          </div>
+        </div>
+
+        <div class="meso-faq">
+          <div class="meso-faq-heading">
+            <p class="eyebrow">PREGUNTAS FRECUENTES</p>
+            <h3>Antes de agendar</h3>
+          </div>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Todas las personas pueden realizarse mesoterapia?</summary><p>No necesariamente. La pertinencia del tratamiento debe determinarse mediante una valoración profesional.</p></details>
+            <details class="faq-item"><summary>¿Cuántas sesiones se necesitan?</summary><p>No existe un número único para todos los casos. Depende del objetivo, la valoración y el seguimiento indicado.</p></details>
+            <details class="faq-item"><summary>¿Qué cuidados se indican después?</summary><p>Los cuidados posteriores dependen del tratamiento realizado y deben ser explicados por el personal que atienda la sesión.</p></details>
+          </div>
+        </div>
+
+        <div class="meso-cta">
+          <div><p class="eyebrow">¿QUIERES SABER MÁS?</p><h3>Conversemos sobre tu consulta.</h3></div>
+          <a class="btn btn-primary" href="https://wa.me/50582351430" target="_blank" rel="noopener noreferrer">Escribir por WhatsApp <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits section-pad">
+      <div class="container">
+        <div class="center-title">
+          <p class="eyebrow">POR QUÉ FARMACIA MÍA</p>
+          <h2>Pequeños detalles, mejor experiencia.</h2>
+        </div>
+        <div class="benefit-grid">
+          <article class="benefit reveal"><div class="benefit-icon">✦</div><h3>Atención humana</h3><p>Un trato cercano para ayudarte a encontrar lo que necesitas.</p></article>
+          <article class="benefit reveal"><div class="benefit-icon">+</div><h3>Oferta integral</h3><p>Farmacia, cuidado personal, clínica y servicios especializados.</p></article>
+          <article class="benefit reveal"><div class="benefit-icon">↗</div><h3>Contacto directo</h3><p>Comunícate de forma rápida por WhatsApp o visita nuestra ubicación.</p></article>
+          <article class="benefit reveal"><div class="benefit-icon">⌂</div><h3>Ubicación en Managua</h3><p>Encuéntranos y consulta la ruta desde Google Maps.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-cta" id="contacto">
+      <div class="container contact-cta-inner">
+        <div>
+          <p class="eyebrow">ESTAMOS PARA ATENDERTE</p>
+          <h2>Hablemos de tu próxima consulta.</h2>
+          <p>Escríbenos por WhatsApp o consulta nuestra ubicación en Managua.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-light" href="https://wa.me/50582351430" target="_blank" rel="noopener noreferrer">WhatsApp <span>↗</span></a>
+          <a class="btn btn-outline-light" href="https://maps.app.goo.gl/voNZQM96Lqcw1BkB6" target="_blank" rel="noopener noreferrer">Ver ubicación <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand footer-logo" href="#inicio"><span class="brand-word">FARMACIA</span><img src="/img/logo.png" alt="Mía" class="brand-mark" /></a>
+        <p>Tu salud en buenas manos. Un espacio de farmacia, cuidado y bienestar en Managua.</p>
+        <div class="socials"><a href="https://wa.me/50582351430" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">WA</a><a href="#contacto" aria-label="Contacto">✉</a><a href="https://maps.app.goo.gl/voNZQM96Lqcw1BkB6" target="_blank" rel="noopener noreferrer" aria-label="Mapa">⌖</a></div>
+      </div>
+      <div class="footer-col"><h3>Explora</h3><a href="#inicio">Inicio</a><a href="#servicios">Farmacia</a><a href="#clinica">Clínica</a><a href="#mesoterapia">Mesoterapia</a></div>
+      <div class="footer-col"><h3>Servicios</h3><a href="#servicios">Medicamentos</a><a href="#servicios">Cuidado personal</a><a href="#clinica">Medicina natural</a><a href="#clinica">Acupuntura</a></div>
+      <div class="footer-col"><h3>Contacto</h3><a href="tel:+50582351430">+505 8235 1430</a><a href="https://wa.me/50582351430" target="_blank" rel="noopener noreferrer">WhatsApp</a><a href="https://maps.app.goo.gl/voNZQM96Lqcw1BkB6" target="_blank" rel="noopener noreferrer">Managua, Nicaragua</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 Farmacia Mía. Todos los derechos reservados.</span><span>Salud • Cuidado • Bienestar</span></div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/50582351430" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2.2c-7.6 0-13.8 6.2-13.8 13.8 0 2.4.6 4.7 1.8 6.7L2 29.8l7.3-1.9c2 1.1 4.3 1.7 6.7 1.7 7.6 0 13.8-6.2 13.8-13.8S23.6 2.2 16 2.2zm0 25.3c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4.3 1.1 1.2-4.2-.3-.5c-1.2-1.9-1.8-4.2-1.8-6.5 0-6.4 5.2-11.6 11.6-11.6s11.6 5.2 11.6 11.6-5.2 11.6-11.6 11.6zm6.3-8.6c-.3-.2-2-.1-2.3-.9-.1-.2-.2-.4-.4-.4s-.3.1-.5.3c-.2.3-.6.8-.7.9-.1.2-.3.2-.5.1-.2-.1-1.4-.5-2.7-1.7-1-1-1.7-2.1-1.9-2.5-.2-.4 0-.6.2-.7.2-.2.4-.4.6-.6.2-.2.3-.4.4-.6.1-.3 0-.5-.1-.7s-.8-2-1.1-2.8c-.3-.7-.6-.6-.8-.6h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.8 0 1.7 1.3 3.3 1.4 3.5.2.2 2.4 3.7 5.8 5.1 3.4 1.4 3.4.9 4 .9.6 0 1.9-.8 2.2-1.5.3-.7.3-1.3.2-1.5-.2-.1-.5-.2-.8-.4z"></path></svg></a>
+
+  <script type="module" src="/ts/main.ts"></script>
+</body>
 </html>
